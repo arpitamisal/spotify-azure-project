@@ -1,0 +1,12 @@
+{
+	"name": "datalake",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://arpitaazureproject.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDkzMzY0QzBFLUIxMkYtNEI3RC1BRTQ4LTM4RjRFMUI3REQ3QV8xOTUwM2E4ZC05ODgzLTQwNGQtODgxMi1mNzU1ZTNiOTZjZGQiDQp9"
+		}
+	}
+}
