@@ -1,0 +1,9 @@
+{
+	"name": "df-arpitaazureproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c5f66a7c-fea6-44b3-84c0-ab4f8cd75850",
+		"tenantId": "c65e5915-6873-483c-aa6c-3bfc758aecc1"
+	}
+}
