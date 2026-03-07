@@ -276,7 +276,7 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@{item().table}",
+														"value": "@{item().table}_cdc",
 														"type": "Expression"
 													},
 													"file": "cdc.json"
@@ -320,16 +320,15 @@
 				}
 			},
 			{
-				"name": "Web1",
+				"name": "Alerts",
 				"type": "WebActivity",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "ForEach1",
 						"dependencyConditions": [
 							"Skipped",
-							"Failed"
+							"Failed",
+							"Completed"
 						]
 					}
 				],
@@ -382,8 +381,8 @@
 					{
 						"schema": "dbo",
 						"table": "FactStream",
-						"cdc_col": "",
-						"from_date": "stream_timestamp"
+						"cdc_col": "stream_timestamp",
+						"from_date": ""
 					}
 				]
 			}
