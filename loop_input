@@ -26,8 +26,8 @@
   {
     "schema" : "dbo",
     "table" : "FactStream",
-    "cdc_col" : "updated_at",
-    "from_date" : ""
+    "cdc_col" : "",
+    "from_date" : "stream_timestamp"
   } 
 
 ]
