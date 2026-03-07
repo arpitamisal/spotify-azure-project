@@ -69,7 +69,7 @@
 						"parameters": {
 							"container": "bronze",
 							"folder": {
-								"value": "@pipeline().parameters.table",
+								"value": "@{pipeline().parameters.table}_cdc",
 								"type": "Expression"
 							},
 							"file": {
@@ -173,7 +173,7 @@
 									"parameters": {
 										"container": "bronze",
 										"folder": {
-											"value": "@pipeline().parameters.table",
+											"value": "@{pipeline().parameters.table}_cdc",
 											"type": "Expression"
 										},
 										"file": {
@@ -261,7 +261,7 @@
 									"parameters": {
 										"container": "bronze",
 										"folder": {
-											"value": "@{pipeline().parameters.table}_cdc",
+											"value": "@pipeline().parameters.table",
 											"type": "Expression"
 										},
 										"file": "cdc.json"
@@ -290,7 +290,7 @@
 									{
 										"type": "Query",
 										"text": {
-											"value": "SELECT MAX(@{pipeline().parameters.cdc_col}) as cdc FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table}",
+											"value": "SELECT MAX(@{pipeline().parameters.cdc_col}) as cdc FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table}_cdc",
 											"type": "Expression"
 										}
 									}
