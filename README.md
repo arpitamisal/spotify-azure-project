@@ -10,8 +10,8 @@ This project implements an end-to-end data engineering pipeline that ingests, pr
 - PySpark & Spark Streaming  
 - Delta Live Tables  
 - Unity Catalog  
-- GitHub  
-
+- GitHub
+  
 ## Architecture
 - Source data ingested from **Azure SQL Database**  
 - **Azure Data Factory pipelines** perform incremental ingestion and orchestration  
